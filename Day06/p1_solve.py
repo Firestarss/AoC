@@ -20,7 +20,7 @@ def step(data):
 
     return temp
 
-for i in range(256):
+for i in range(80):
     print(i)
     data = step(data)
 
