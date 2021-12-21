@@ -12,9 +12,14 @@ if __name__ == "__main__":
     
     subprocess.run("cp -r " + pwd + "/Base " + pwd + "/Day" + str(day).zfill(2), shell=True)
 
+    print("Running...")
     file_written = False
+    start = datetime.now()
     while not file_written:
         now = datetime.now()
+        if (now-start).seconds > 10:
+            print("Still Running...")
+            start = now
         if now.hour == 0 and now.second > 5:
             input_page = "https://adventofcode.com/%s/day/%s/input" %(str(now.year), str(now.day))
             response = requests.get(input_page, cookies={"session":secrets["session_cookie"]})
