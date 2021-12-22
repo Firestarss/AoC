@@ -1,10 +1,7 @@
 
 
-input_file = ["input.txt", "test_input.txt"]
+input_files = ["input.txt", "test_input.txt"]
 
-data = []
-with open(input_file[0], "r") as file:
-    for line in file:
-        temp = line.strip()
-        data.append(temp)
+with open(input_files[0], 'r') as f:
+    data =  [a.strip() for a in f.readlines()]
 
