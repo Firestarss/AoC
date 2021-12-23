@@ -17,10 +17,10 @@ if __name__ == "__main__":
     start = datetime.now()
     while not file_written:
         now = datetime.now()
-        if (now-start).seconds > 10:
+        if (now-start).seconds > 3:
             print("Still Running...")
             start = now
-        if now.hour == 0 and now.second > 5:
+        if now.hour == 22 and now.second > 5:
             input_page = "https://adventofcode.com/%s/day/%s/input" %(str(now.year), str(now.day))
             response = requests.get(input_page, cookies={"session":secrets["session_cookie"]})
     
