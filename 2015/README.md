@@ -8,9 +8,9 @@ Languages I'm using:
  - Ruby
  - Go(lang)
 
-|       | Ruby               | Go                 | C++                | Java               | Python             |
+|       | Ruby               | Go                 | JavaScript         | Java               | Python             |
 |:-----:|:------------------:|:------------------:|:------------------:|:------------------:|:------------------:|
-| Day01 | :heavy_check_mark: |                    |                    |                    |                    |
+| Day01 |                    |                    | :heavy_check_mark: |                    |                    |
 | Day02 | :heavy_check_mark: |                    |                    |                    |                    |
 | Day03 | :heavy_check_mark: |                    |                    |                    |                    |
 | Day04 | :heavy_check_mark: |                    |                    |                    |                    |
