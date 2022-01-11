@@ -12,8 +12,8 @@ Languages I'm using:
 |:-----:|:------------------:|:------------------:|:------------------:|:------------------:|:------------------:|
 | Day01 |                    |                    | :heavy_check_mark: |                    |                    |
 | Day02 |                    |                    | :heavy_check_mark: |                    |                    |
-| Day03 | :heavy_check_mark: |                    |                    |                    |                    |
-| Day04 | :heavy_check_mark: |                    |                    |                    |                    |
+| Day03 |                    |                    | :heavy_check_mark: |                    |                    |
+| Day04 |                    |                    | :heavy_check_mark: |                    |                    |
 | Day05 | :heavy_check_mark: |                    |                    |                    |                    |
 | Day06 |                    |                    |                    |                    |                    |
 | Day07 |                    |                    |                    |                    |                    |
