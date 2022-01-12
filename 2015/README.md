@@ -8,7 +8,7 @@ Languages I'm using:
  - Ruby
  - Go/Golang
 
-|       | &nbsp; Ruby &nbsp; | &nbsp; Go &nbsp; | &nbsp; &nbsp; JS &nbsp; &nbsp; | &nbsp; Java &nbsp; | Python             |
+|       | &nbsp; Ruby &nbsp; | &nbsp; &nbsp; Go &nbsp; &nbsp; | &nbsp; &nbsp; JS &nbsp; &nbsp; | &nbsp; Java &nbsp; | Python |
 |:-----:|:------------------:|:------------------:|:------------------:|:------------------:|:------------------:|
 | Day01 |                    |                    | :heavy_check_mark: |                    |                    |
 | Day02 |                    |                    | :heavy_check_mark: |                    |                    |
