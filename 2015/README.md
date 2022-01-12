@@ -4,11 +4,11 @@ I wanted to do year 2015 in 5 different languages with a maximum of 5 days being
 Languages I'm using:
  - Python
  - Java
- - C++
+ - Javascript
  - Ruby
  - Go(lang)
 
-|       | Ruby               | Go                 | JavaScript         | Java               | Python             |
+|       | Ruby               | Go                 | JS                 | Java               | Python             |
 |:-----:|:------------------:|:------------------:|:------------------:|:------------------:|:------------------:|
 | Day01 |                    |                    | :heavy_check_mark: |                    |                    |
 | Day02 |                    |                    | :heavy_check_mark: |                    |                    |
