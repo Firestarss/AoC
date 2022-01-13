@@ -20,8 +20,8 @@ Languages I'm using:
 | Day08 | :heavy_check_mark: |                    |                    |                    |                    |
 | Day09 | :heavy_check_mark: |                    |                    |                    |                    |
 | Day10 | :heavy_check_mark: |                    |                    |                    |                    |
-| Day11 |                    |                    |                    |                    |                    |
-| Day12 |                    |                    |                    |                    |                    |
+| Day11 |                    | :heavy_check_mark: |                    |                    |                    |
+| Day12 |                    | :heavy_check_mark: |                    |                    |                    |
 | Day13 |                    |                    |                    |                    |                    |
 | Day14 |                    |                    |                    |                    |                    |
 | Day15 |                    |                    |                    |                    |                    |
