@@ -5,7 +5,7 @@ Languages I'm using:
  - Python 3: 0 uses
  - Java: 0 uses
  - JavaScript: 3 uses
- - Ruby: 4 uses
+ - Ruby: 5 uses
  - Go/Golang: 5 uses
 
 |       | &nbsp; Ruby &nbsp; | &nbsp; &nbsp; Go &nbsp; &nbsp; | &nbsp; &nbsp; JS &nbsp; &nbsp; | &nbsp; Java &nbsp; | Python |
@@ -22,7 +22,7 @@ Languages I'm using:
 | Day10 | :heavy_check_mark: |                    |                    |                    |                    |
 | Day11 |                    | :heavy_check_mark: |                    |                    |                    |
 | Day12 |                    |                    | :heavy_check_mark: |                    |                    |
-| Day13 |                    |                    |                    |                    |                    |
+| Day13 | :heavy_check_mark: |                    |                    |                    |                    |
 | Day14 |                    |                    |                    |                    |                    |
 | Day15 |                    |                    |                    |                    |                    |
 | Day16 |                    |                    |                    |                    |                    |
