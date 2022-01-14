@@ -10,10 +10,10 @@ Languages I'm using:
 
 |       | &nbsp; Ruby &nbsp; | &nbsp; &nbsp; Go &nbsp; &nbsp; | &nbsp; &nbsp; JS &nbsp; &nbsp; | &nbsp; Java &nbsp; | Python |
 |:-----:|:------------------:|:------------------:|:------------------:|:------------------:|:------------------:|
-| Day01 |                    |                    | :heavy_check_mark: |                    |                    |
-| Day02 |                    |                    | :heavy_check_mark: |                    |                    |
+| Day01 |                    | :heavy_check_mark: |                    |                    |                    |
+| Day02 |                    | :heavy_check_mark: |                    |                    |                    |
 | Day03 |                    |                    | :heavy_check_mark: |                    |                    |
-| Day04 |                    |                    | :heavy_check_mark: |                    |                    |
+| Day04 |                    | :heavy_check_mark: |                    |                    |                    |
 | Day05 |                    |                    | :heavy_check_mark: |                    |                    |
 | Day06 | :heavy_check_mark: |                    |                    |                    |                    |
 | Day07 | :heavy_check_mark: |                    |                    |                    |                    |
@@ -21,7 +21,7 @@ Languages I'm using:
 | Day09 | :heavy_check_mark: |                    |                    |                    |                    |
 | Day10 | :heavy_check_mark: |                    |                    |                    |                    |
 | Day11 |                    | :heavy_check_mark: |                    |                    |                    |
-| Day12 |                    | :heavy_check_mark: |                    |                    |                    |
+| Day12 |                    |                    | :heavy_check_mark: |                    |                    |
 | Day13 |                    |                    |                    |                    |                    |
 | Day14 |                    |                    |                    |                    |                    |
 | Day15 |                    |                    |                    |                    |                    |
