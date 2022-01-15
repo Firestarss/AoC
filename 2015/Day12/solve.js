@@ -17,9 +17,6 @@ fs.readFile('input.txt', 'utf8', (err, data) => {
     else if (data.constructor.name === "Object" && Object.values(data).includes("red")) {
         return 0
     }
-    else if (data.constructor.name == "String") {
-        return 0
-    }
 
     // recursive case
     if (data.constructor.name === "Object") {
@@ -31,6 +28,8 @@ fs.readFile('input.txt', 'utf8', (err, data) => {
         }
         return data.reduce((a, b) => recurse(a) + recurse(b))
     }
+
+    return 0
   }
 
   function part1(data) {
