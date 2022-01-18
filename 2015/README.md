@@ -25,7 +25,7 @@ Languages I'm using:
 | Day13 | :heavy_check_mark: |                    |                    |                    |                    |
 | Day14 |                    |                    |                    | :heavy_check_mark: |                    |
 | Day15 |                    |                    |                    | :heavy_check_mark: |                    |
-| Day16 |                    |                    |                    |                    |                    |
+| Day16 |                    |                    | :heavy_check_mark: |                    |                    |
 | Day17 |                    |                    |                    |                    |                    |
 | Day18 |                    |                    |                    |                    |                    |
 | Day19 |                    |                    |                    |                    |                    |
