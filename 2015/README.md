@@ -2,7 +2,7 @@ I wanted to do year 2015 in 5 different languages with a maximum of 5 days being
 
 
 Languages I'm using:
- - Python 3: 1 uses
+ - Python 3: 2 uses
  - Java: 3 uses
  - JavaScript: 5 uses
  - Ruby: 5 uses
