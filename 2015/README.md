@@ -3,7 +3,7 @@ I wanted to do year 2015 in 5 different languages with a maximum of 5 days being
 
 Languages I'm using:
  - Python 3: 2 uses
- - Java: 3 uses
+ - Java: 4 uses
  - JavaScript: 5 uses
  - Ruby: 5 uses
  - Go/Golang: 5 uses
@@ -30,7 +30,7 @@ Languages I'm using:
 | Day18 |                    |                    |                    | :heavy_check_mark: |                    |
 | Day19 |                    |                    |                    |                    | :heavy_check_mark: |
 | Day20 |                    |                    |                    |                    | :heavy_check_mark: |
-| Day21 |                    |                    |                    |                    |                    |
+| Day21 |                    |                    |                    | :heavy_check_mark: |                    |
 | Day22 |                    |                    |                    |                    |                    |
 | Day23 |                    |                    |                    |                    |                    |
 | Day24 |                    |                    |                    |                    |                    |
