@@ -1,4 +1,8 @@
 import itertools
+from tokenize import group
+from turtle import left, pos, position
+
+from numpy import prod
 
 
 with open("input.txt", "r") as infile:
@@ -6,5 +10,22 @@ with open("input.txt", "r") as infile:
 
 nums = [int(x) for x in lines.split("\n")]
 
-combos = itertools.combinations(nums)
+def balance(nums, n):
+    weight = sum(nums) // n
+    running = True
 
+    for i in range(len(nums)):
+        if running:
+            for group1 in itertools.combinations(nums, i):
+                if sum(group1) == weight:
+                    product = 1
+                    for x in group1:
+                        product *= x
+                    running = False
+                    break
+
+    print(product)
+
+
+balance(nums, 3)
+balance(nums, 4)

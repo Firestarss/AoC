@@ -33,5 +33,5 @@ Languages I'm using:
 | Day21 |                    |                    |                    | :heavy_check_mark: |                    |
 | Day22 |                    |                    |                    |                    | :heavy_check_mark: |
 | Day23 |                    |                    |                    | :heavy_check_mark: |                    |
-| Day24 |                    |                    |                    |                    |                    |
+| Day24 |                    |                    |                    |                    | :heavy_check_mark: |
 | Day25 |                    |                    |                    |                    |                    |
