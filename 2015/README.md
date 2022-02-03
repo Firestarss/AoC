@@ -1,12 +1,14 @@
+# Finished!!! #
+
 I wanted to do year 2015 in 5 different languages with a maximum of 5 days being done in any given language.
 
 
 Languages I'm using:
- - Python 3: 3 uses
- - Java: 5 uses
- - JavaScript: 5 uses
- - Ruby: 5 uses
- - Go/Golang: 5 uses
+ - Python 3
+ - Java
+ - JavaScript
+ - Ruby
+ - Go/Golang
 
 |       | &nbsp; Ruby &nbsp; | &nbsp; &nbsp; Go &nbsp; &nbsp; | &nbsp; &nbsp; JS &nbsp; &nbsp; | &nbsp; Java &nbsp; | Python |
 |:-----:|:------------------:|:------------------:|:------------------:|:------------------:|:------------------:|
@@ -34,4 +36,4 @@ Languages I'm using:
 | Day22 |                    |                    |                    |                    | :heavy_check_mark: |
 | Day23 |                    |                    |                    | :heavy_check_mark: |                    |
 | Day24 |                    |                    |                    |                    | :heavy_check_mark: |
-| Day25 |                    |                    |                    |                    |                    |
+| Day25 |                    |                    |                    |                    | :heavy_check_mark: |
