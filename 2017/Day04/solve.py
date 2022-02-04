@@ -1,0 +1,2 @@
+with open("input.txt", "r") as infile: input = infile.read().strip().split("\n")
+print(str(sum([len(x.split(" "))==len(set(x.split(" "))) for x in input])) + "\n" + str(sum([len([''.join(sorted(a)) for a in x.split(" ")])==len(set([''.join(sorted(a)) for a in x.split(" ")])) for x in input])))
