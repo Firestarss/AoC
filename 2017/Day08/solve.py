@@ -1,17 +1,7 @@
-import re
-
-filenames = ["input.txt", "test_input.txt"]
-file_num = 0
-
-with open(filenames[file_num], "r") as infile:
+with open("input.txt", "r") as infile:
     input = infile.read().strip().split("\n")
 
-registers = set([re.match("^[^ ]+", x).group(0) for x in input])
-registers_dict = {}
-
-for register in registers:
-    registers_dict[register] = 0
-
+registers_dict = {register:0 for register in set([x.split(" ")[0] for x in input])}
 instructions = [x.split(" ") for x in input]
 
 def solve(instructions, registers_dict):
