@@ -7,7 +7,7 @@ file_num = 0
 with open(filenames[file_num], "r") as infile:
     input = infile.read().strip().split("\n")
 
-def part1(input):
+def solve(input):
     depth = 0
     total = 0
     garbage = False
@@ -40,4 +40,4 @@ def part1(input):
     print(total)
     print(garbage_count)
 
-part1(input)
+solve(input)
