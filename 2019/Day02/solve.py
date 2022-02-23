@@ -1,7 +1,8 @@
 import sys
 sys.path.append('../')
-import itertools
 from intcode import compute
+import itertools
+
 
 filenames = ["input.txt", "test_input.txt"]
 file_num = 0

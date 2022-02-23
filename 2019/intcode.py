@@ -1,3 +1,7 @@
+# import sys
+# sys.path.append('../')
+# from intcode import compute
+
 def compute(input):
     i = 0
     while i < len(input):
