@@ -1,7 +1,8 @@
 from functools import reduce
 
-input = "ljoxqyyw"
+# input = "ljoxqyyw"
 # input = "flqrgnkx"
+input = "hfdlxzhv"
 grid = []
 
 def knot_hash(input):
