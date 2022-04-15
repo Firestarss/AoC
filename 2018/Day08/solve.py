@@ -5,7 +5,7 @@ file_num = 0
 with open(input_files[file_num], 'r') as f:
     input = [int(x) for x in f.read().strip().split(" ")]
 
-def part1():
+def solve():
     child_stack = [input[0]]
     meta_stack = [input[1]]
     data = []
@@ -48,4 +48,4 @@ def part1():
     print(sum(data))
     print(data2)
 
-part1()
+solve()
