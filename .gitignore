@@ -6,3 +6,4 @@ secrets.json
 __pycache__
 solution.py
 stars.py
+test_input.txt
