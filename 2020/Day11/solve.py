@@ -1,6 +1,5 @@
 import copy
 from threading import local
-from webbrowser import get
 
 from numpy import empty, empty_like
 input_files = ["input.txt", "test_input.txt"]
