@@ -3,7 +3,7 @@ from itertools import combinations_with_replacement as cwr
 from itertools import permutations
 input_files = ["input.txt", "test_input.txt"]
 
-file = 1
+file = 0
 with open(input_files[file], 'r') as f:
     lines =  [a.strip() for a in f.readlines()]
 
@@ -15,26 +15,21 @@ def apply_mask(mask, value):
 
     return(int("".join(value), 2))
 
-def apply_mask_v2(mask, value):
-    value = list(bin(value)[2:].zfill(36))
-
-    for i in range(36):
-        if mask[i] == "1": value[i] = mask[i]
-
-    return(int("".join(value), 2))
-
-def generate_masks(mask):
+def generate_addresses(mask, address):
     n = mask.count("X")
+    address = list(bin(address)[2:].zfill(36))
     xs_set = set()
-    masks = []
+    addresses = []
     for combo in cwr(["0", "1"], n):
         xs_set = xs_set.union(set(permutations(combo)))
 
     for xs in xs_set:
         xs = list(xs)
-        masks.append("".join([xs.pop() if x == "X" else x for x in mask]))
+        temp = [xs.pop() if mask[i] == "X" else address[i] for i in range(len(address))]
+        temp = ["1" if mask[i] == "1" else temp[i] for i in range(len(mask))]
+        addresses.append(int("".join(temp), 2))
 
-    return(masks)
+    return(addresses)
 
 
 def part1():
@@ -50,15 +45,16 @@ def part1():
     print(sum(memory.values()))
 
 def part2():
-    masks = []
+    mask = 0
     memory = {}
     for line in lines:
         if line.startswith("mask"):
-            masks = generate_masks(re.findall("[X01]{36}", line)[0])
+            mask = re.findall("[X01]{36}", line)[0]
         else:
             value = list(map(int, re.findall("\d+", line)))
-            for mask in masks:
-                memory[apply_mask_v2(mask, value[0])] = value[1]
+            addresses = generate_addresses(mask, value[0])
+            for address in addresses:
+                memory[address] = value[1]
 
     print(sum(memory.values()))
 
