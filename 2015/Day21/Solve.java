@@ -1,8 +1,9 @@
 import java.util.*;
-import java.io.*;
 
 class Solve{
     public static void main(String[] args){
+        int[] bossStats = new int[]{104, 8, 1};
+
         int[][] weapons = new int[][]{
             { 8, 4, 0},  // Dagger
             {10, 5, 0},  // Shortsword
@@ -27,8 +28,6 @@ class Solve{
             { 40, 0, 2},  // Defense +2
             { 80, 0, 3}}; // Defense +3
 
-        int[] bossStats = parseInput("input.txt");
-
         ArrayList<ArrayList<Integer>> allStats = genAllStats(weapons, armor, rings);
 
         part1(allStats, bossStats);
@@ -39,8 +38,8 @@ class Solve{
 
     public static void part1(ArrayList<ArrayList<Integer>> allStats, int[] bossStats) {
         for (ArrayList<Integer> playerStats : allStats) {
-            int playerTurns = (int) Math.ceil(100 / Math.max(bossStats[1] - playerStats.get(2), 1));
-            int bossTurns = (int) Math.ceil(bossStats[0] / Math.max(playerStats.get(1) - bossStats[2], 1));
+            int playerTurns = (int) Math.ceil((100 - 1) / Math.max(bossStats[1] - playerStats.get(2), 1));
+            int bossTurns = (int) Math.ceil((bossStats[0] - 1) / Math.max(playerStats.get(1) - bossStats[2], 1));
 
             if (playerTurns >= bossTurns) {
                 System.out.println(playerStats.get(0));
@@ -51,8 +50,8 @@ class Solve{
 
     public static void part2(ArrayList<ArrayList<Integer>> allStats, int[] bossStats) {
         for (ArrayList<Integer> playerStats : allStats) {
-            int playerTurns = (int) Math.ceil(100 / Math.max(bossStats[1] - playerStats.get(2), 1));
-            int bossTurns = (int) Math.ceil(bossStats[0] / Math.max(playerStats.get(1) - bossStats[2], 1));
+            int playerTurns = (int) Math.ceil((100 - 1) / Math.max(bossStats[1] - playerStats.get(2), 1));
+            int bossTurns = (int) Math.ceil((bossStats[0] - 1) / Math.max(playerStats.get(1) - bossStats[2], 1));
 
             if (!(playerTurns >= bossTurns)) {
                 System.out.println(playerStats.get(0));
@@ -83,28 +82,7 @@ class Solve{
         }
 
         output.sort(Comparator.comparingInt(e -> e.get(0)));
-
-        return output;
-    }
-
-    public static int[] parseInput(String filename){
-        int[] output = new int[3];
-        try {
-            File myObj = new File(filename);
-            Scanner myReader = new Scanner(myObj);
-            int i = 0;
-            while (myReader.hasNextLine()) {
-                String data = myReader.nextLine();
-                
-                output[i] = Integer.parseInt(data.substring(data.indexOf(":") + 2));
-                i++;
-            }
-            myReader.close();
-        } 
-        catch (FileNotFoundException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
-        }
         return output;
     }
 }
+// P1: !76

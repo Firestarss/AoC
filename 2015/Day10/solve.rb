@@ -17,7 +17,7 @@ def part2(input)
     input.length
 end
 
-input = 1113222113.to_s
+input = 1113122113.to_s
 
 p part1(input)
 p part2(input)

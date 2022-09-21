@@ -19,5 +19,5 @@ def part1and2(input):
             print(i)
             break
 
-input = 29000000
+input = 34000000
 part1and2(input)

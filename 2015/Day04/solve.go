@@ -27,7 +27,7 @@ func match_hash(key, match string) {
 }
 
 func main() {
-	key := "ckczppom"
+	key := "yzbqklnj"
 	match_hash(key, "00000")
 	match_hash(key, "000000")
 }

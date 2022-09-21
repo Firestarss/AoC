@@ -1,6 +1,4 @@
 import itertools
-from tokenize import group
-from turtle import left, pos, position
 
 from numpy import prod
 

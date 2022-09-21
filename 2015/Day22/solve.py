@@ -106,7 +106,7 @@ def sim(boss_stats, hard):
     print(min_mana)
 
 
-boss_stats = (55, 8) # input. [hit points, damage]
+boss_stats = (58, 9) # input. [hit points, damage]
 
 sim(boss_stats, False)
 sim(boss_stats, True)

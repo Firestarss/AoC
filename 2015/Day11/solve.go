@@ -50,6 +50,6 @@ func next_password(password string) string {
 }
 
 func main() {
-	p1_ans := next_password("vzbxkghb")
+	p1_ans := next_password("cqjxjnds")
 	next_password(p1_ans)
 }
