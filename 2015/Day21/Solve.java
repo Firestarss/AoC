@@ -38,8 +38,8 @@ class Solve{
 
     public static void part1(ArrayList<ArrayList<Integer>> allStats, int[] bossStats) {
         for (ArrayList<Integer> playerStats : allStats) {
-            int playerTurns = (int) Math.ceil((100 - 1) / Math.max(bossStats[1] - playerStats.get(2), 1));
-            int bossTurns = (int) Math.ceil((bossStats[0] - 1) / Math.max(playerStats.get(1) - bossStats[2], 1));
+            int playerTurns = (int) Math.ceil((float) 100 / Math.max(bossStats[1] - playerStats.get(2), 1));
+            int bossTurns = (int) Math.ceil((float) bossStats[0] / Math.max(playerStats.get(1) - bossStats[2], 1));
 
             if (playerTurns >= bossTurns) {
                 System.out.println(playerStats.get(0));
@@ -50,8 +50,8 @@ class Solve{
 
     public static void part2(ArrayList<ArrayList<Integer>> allStats, int[] bossStats) {
         for (ArrayList<Integer> playerStats : allStats) {
-            int playerTurns = (int) Math.ceil((100 - 1) / Math.max(bossStats[1] - playerStats.get(2), 1));
-            int bossTurns = (int) Math.ceil((bossStats[0] - 1) / Math.max(playerStats.get(1) - bossStats[2], 1));
+            int playerTurns = (int) Math.ceil((float) 100 / Math.max(bossStats[1] - playerStats.get(2), 1));
+            int bossTurns = (int) Math.ceil((float) bossStats[0] / Math.max(playerStats.get(1) - bossStats[2], 1));
 
             if (!(playerTurns >= bossTurns)) {
                 System.out.println(playerStats.get(0));
