@@ -1,8 +1,5 @@
 import java.io.*;
 import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import java.util.Collections;
 
 class Solve {
     public static void main(String[] args) {
@@ -114,6 +111,7 @@ class Solve {
                 }
                 i++;
             }
+            sc.close();
         } catch (Exception e) {
             System.exit(1);
         }

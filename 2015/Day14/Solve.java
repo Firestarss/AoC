@@ -1,7 +1,5 @@
 import java.io.*;
 import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import java.util.Collections;
 
 class Solve {
@@ -72,6 +70,7 @@ class Solve {
                 
                 reindeer.add(new Reindeer(int_values.get(0),int_values.get(1),int_values.get(2)));
             }
+            sc.close();
         } catch (Exception e) {
             System.exit(1);
         }

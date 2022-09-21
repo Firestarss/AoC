@@ -1,7 +1,5 @@
 import java.io.*;
 import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import java.util.Collections;
 
 class Solve {
@@ -92,6 +90,7 @@ class Solve {
                 
                 output.add(int_values);
             }
+            sc.close();
         } catch (Exception e) {
             System.exit(1);
         }
