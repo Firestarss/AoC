@@ -2,7 +2,7 @@ import hashlib
 import random
 import string
 
-input = "ugkcyxxp"
+input = "abbhdwsy"
 hex_digits = string.hexdigits[:16]
 
 def solve():
