@@ -52,16 +52,16 @@ class Knot:
         self.head_move(direction)
         
 
-def solve(n_knots):
+def solve():
     head = None
     tail = None
     second = None
     old = None
-    for i in range(n_knots):
+    for i in range(10):
         if i == 0:
             head = Knot()
             old = head
-        elif i == n_knots - 1:
+        elif i == 9:
             tail = Knot(old)
         else:
             cur = Knot(old)
@@ -75,4 +75,4 @@ def solve(n_knots):
     print(len(second.get_visited()))
     print(len(tail.get_visited()))
 
-solve(10)
+solve()
