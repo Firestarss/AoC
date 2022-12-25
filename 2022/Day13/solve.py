@@ -1,5 +1,4 @@
 import ast
-import time
 input_files = ["input.txt", "test_input.txt"]
 
 file = 0
