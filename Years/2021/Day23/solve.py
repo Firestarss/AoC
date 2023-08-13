@@ -1,0 +1,1 @@
+# This Day was solved using pen and paper (Well... iPad and stylus)
