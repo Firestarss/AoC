@@ -1,14 +1,19 @@
 import requests
 import re
 
-def progressBar (iteration, total, decimals = 0, length = 25, fill = '█', empty = '-', show_percent = True):
-    percent = ("{0:." + str(decimals) + "f}").format(100 * (iteration / float(total))).rjust(4)
-    if iteration == total: percent = "100".rjust(4)
+def progressBar (iteration, total, length = 25, fill = '█', empty = '-'):
     filledLength = int(length * iteration // total)
     bar = fill * filledLength + empty * (length - filledLength)
-    output = bar
-    if show_percent: output += f" {percent}%"
-    return output
+    return bar
+
+def progress_percent(iteration, total, decimals = 1):
+    percent = 100 * (iteration / float(total))
+    if round(percent, 2).is_integer():
+        percent = round(percent)
+    else:
+        percent = round(percent, decimals)
+
+    return f"{percent}%".ljust(7)
 
 if __name__ == "__main__":
 
@@ -37,8 +42,8 @@ if __name__ == "__main__":
 
     md_txt = "# AoC\n\nThis Repo contains my code for completing the Advent of Code challenges. "
     md_txt += "It is not clean or polished and is probably incomplete. Have fun exploring if you like."
-    md_txt += "\n\n| Year         | Stars | Percentage Complete                                      |"
-    md_txt +=   "\n|--------------|:-----:|----------------------------------------------------------|"
+    md_txt += "\n\n| Year         | Stars | Progress Bar                                       | Percent |"
+    md_txt +=   "\n|--------------|:-----:|----------------------------------------------------|--------:|"
 
     for line in stars:
         if len(line) == 1:
@@ -46,10 +51,12 @@ if __name__ == "__main__":
 
         total_sum += int(line[1])
 
-        md_txt += f"\n| [{line[0]}]({line[0]}) | {line[1].zfill(2):5} | {progressBar(int(line[1]), 50, 0, 50, '*', ' ')} |"
+        md_txt += f"\n| [{line[0]}]({line[0]}) | {line[1].zfill(2):5} | {progressBar(int(line[1]), 50, 50, '*', ' ')} | {progress_percent(int(line[1]),50)} |"
 
-    md_txt += f"\n| {'Total'.ljust(12)} | {str(total_sum).ljust(5)} | {progressBar(total_sum, 50 * len(stars), 1, 50, '█', ' ')} |"
+    md_txt += f"\n| {'Total'.ljust(12)} | {str(total_sum).ljust(5)} | {progressBar(total_sum, 50 * len(stars), 50, 'l', ' ')} | {progress_percent(total_sum, 50 * len(stars))} |"
     md_txt += "\n"
 
+    print(md_txt)
+
     with open("../README.md", "w") as outfile:
-        print(outfile.write(md_txt))
+        outfile.write(md_txt)
