@@ -13,7 +13,7 @@ def progress_percent(iteration, total, decimals = 1):
     else:
         percent = round(percent, decimals)
 
-    return f"{percent}%".ljust(7)
+    return f"{percent}%".ljust(12)
 
 if __name__ == "__main__":
 
@@ -42,8 +42,8 @@ if __name__ == "__main__":
 
     md_txt = "# AoC\n\nThis Repo contains my code for completing the Advent of Code challenges. "
     md_txt += "It is not clean or polished and is probably incomplete. Have fun exploring if you like."
-    md_txt += "\n\n| Year         | Stars | Progress Bar                                       | Percent |"
-    md_txt +=   "\n|--------------|:-----:|----------------------------------------------------|--------:|"
+    md_txt += "\n\n| Year         | Stars | Progress Bar                                       | Percent Done |"
+    md_txt +=   "\n|--------------|:-----:|----------------------------------------------------|:-------------|"
 
     for line in stars:
         if len(line) == 1:
