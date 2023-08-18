@@ -13,3 +13,5 @@ This Repo contains my code for completing the Advent of Code challenges. It is n
 | [2016](2016) | 20    | ********************                               | 40%     |
 | [2015](2015) | 50    | ************************************************** | 100%    |
 | Total        | 108   | *************                                      | 27%     |
+
+Each star in the Total row represents roughly 8 stars
