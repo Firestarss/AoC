@@ -1,8 +1,7 @@
-from distutils.filelist import findall
 import math
 import re
 
-input = 368078
+input = 312051
 
 def part1(input):
     cells = {}
