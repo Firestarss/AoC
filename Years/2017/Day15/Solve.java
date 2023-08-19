@@ -2,8 +2,8 @@ import java.util.ArrayList;
 
 class Solve {
     public static void main(String[] args) {
-        long genA = 783;
-        long genB = 325;
+        long genA = 703;
+        long genB = 516;
         final int aFactor = 16807;
         final int bFactor = 48271;
         final int mod = 2147483647;
@@ -22,20 +22,16 @@ class Solve {
                 count1 = count1 + 1;
             }
 
-            if (Math.min(aList.size(), bList.size()) > 5000000){
-                continue;
-            }
-
-            if (genA % 4 == 0){
+            if (aList.size() < 5000000 && genA % 4 == 0){
                 aList.add(genA);
             }
 
-            if (genB % 8 == 0){
+            if (bList.size() < 5000000 && genB % 8 == 0){
                 bList.add(genB);
             }
         }
 
-        for (int i = 0; i < 5000000; i++){
+        for (int i = 0; i < Math.min(aList.size(), bList.size()); i++){
             if ((aList.get(i) & 0xFFFF) == (bList.get(i) & 0xFFFF)){
                 count2 = count2 + 1;
             }
