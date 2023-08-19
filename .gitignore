@@ -1,10 +1,8 @@
 secrets.json
 secrets*
-2021/Day11
-2021/Day22
-2021/Day16
-2021/Day24
 __pycache__
 solution.py
 stars.py
 test_input.txt
+*.class
+*.out

@@ -64,7 +64,7 @@ def part2():
     a=b=c=d=e=f=g=h=0
     a=1
 
-    b=c=84*100+100000
+    b=c=81*100+100000
     c += 17000
 
     for i in range(b, c+1, 17):
