@@ -1,5 +1,5 @@
 from itertools import product
-input = 6392
+input = 8199
 
 def calc_power(coord):
     rack_id = coord[0] + 10

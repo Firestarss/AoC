@@ -47,11 +47,11 @@ def part1(state):
 
 def part2(state):
     values = [sum(state)]
-    for i in range(2001):
+    for i in range(20001):
         state = step(state)
         values.append(sum(state))
 
-    print(values[-1] + (50000000000 - 2000) * (values[-1] - values[-2]))
+    print(values[-1] + (50000000000 - 20000) * (values[-1] - values[-2]))
 
 part1(start_state)
 part2(start_state)

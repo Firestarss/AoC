@@ -49,8 +49,8 @@ def solve(num_players, last_marble):
 
     print(max(players))
     
-num_players = 411
-last_marble = 71170
+num_players = 465
+last_marble = 71498
 
 solve(num_players, last_marble)
 solve(num_players, last_marble * 100)

@@ -11,6 +11,7 @@ def part1():
     print("".join(nx.lexicographical_topological_sort(g)))
 
 def part2():
+    pass
     
 
 part1()
