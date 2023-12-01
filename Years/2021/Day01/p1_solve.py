@@ -2,14 +2,22 @@
 
 input_file = ["input.txt", "test_input.txt"]
 
-data = []
 with open(input_file[0], "r") as file:
-    for line in file:
-        data.append(int(line.strip()))
+    data = list(map(int, file.read().strip().split("\n")))
 
-count = 0
-for i in range(len(data)-3):
-    if sum(data[i:i+3]) < sum(data[i+1:i+4]):
-        count += 1
+def part1(data):
+    prev = data[0]
+    count = 0
 
-print(count)
+    for line in data:
+        if line > prev: count += 1
+        prev = line
+
+    return count
+
+def part2():
+    sum_data = [sum(data[i:i+3]) for i in range(len(data) - 2)]
+    return part1(sum_data)
+
+print(part1(data))
+print(part2())

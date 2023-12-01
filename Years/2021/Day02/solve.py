@@ -1,30 +1,43 @@
-
-
 input_file = ["input.txt", "test_input.txt"]
 
-data = []
 with open(input_file[0], "r") as file:
-    for line in file:
-        data.append(line.strip())
+    data = file.read().strip().split("\n")
 
+def part1():
+    horiz = 0
+    depth = 0
+    for point in data:
+        point = point.split(" ")
+        direction = point[0]
+        value = int(point[1])
 
-horiz = 0
-depth = 0
-for point in data:
-    point = point.split(" ")
-    direction = point[0]
-    value = int(point[1])
+        if direction == "forward":
+            horiz += value
 
-    if direction == "forward":
-        horiz += value
+        if direction == "down":
+            depth += value
 
-    if direction == "backwards":
-        horiz -= value
+        if direction == "up":
+            depth -= value
 
-    if direction == "down":
-        depth += value
+    return horiz*depth
 
-    if direction == "up":
-        depth -= value
+def part2():
+    pos = [0,0,0] # x,y,aim
+    for point in data:
+        direction, value = point.split(" ")
 
-print("Horiz: %d\nDepth: %d\nMultiplied: %d" %(horiz, depth, horiz*depth))
+        if direction == "down":
+            pos[2] += int(value)
+
+        if direction == "up":
+            pos[2] -= int(value)
+
+        if direction == "forward":
+            pos[0] += int(value)
+            pos[1] += int(value) * pos[2]
+
+    return pos[0] * pos[1]
+
+print(part1())
+print(part2())

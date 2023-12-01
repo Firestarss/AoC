@@ -1,7 +1,7 @@
 import re
 import math
 with open("input.txt", "r") as infile:
-    data = infile.read().split("\n\n")
+    data = infile.read().strip().split("\n\n")
 
 rules = data[0].split("\n")
 my_ticket = list(map(int, data[1].split("\n")[1].split(",")))
@@ -36,7 +36,7 @@ def solve():
     valid = set().union(*labled_ranges.values())
 
     for ticket in other_tickets:
-        ticket = list(map(int, ticket.split(",")))
+        ticket = list(map(int, ticket.strip().split(",")))
         valid_ticket = True
         for value in ticket:
             if value not in valid:

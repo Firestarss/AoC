@@ -1,6 +1,6 @@
 import re
 
-input = "197487-673251"
+input = "236491-713787"
 input = [int(x) for x in input.split("-")]
 
 def part1(input):

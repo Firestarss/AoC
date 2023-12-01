@@ -1,4 +1,4 @@
-input = [9,19,1,6,0,5,4]
+input = [1,17,0,10,18,11,6]
 
 def solve(num):
     i = len(input)
