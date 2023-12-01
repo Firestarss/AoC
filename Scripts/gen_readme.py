@@ -42,8 +42,8 @@ if __name__ == "__main__":
 
     md_txt = "# AoC\n\nThis Repo contains my code for completing the Advent of Code challenges. "
     md_txt += "It is not clean or polished and is probably incomplete. Have fun exploring if you like."
-    md_txt += "\n\n| Year         | Stars | Progress Bar                                       | Percent Done |"
-    md_txt +=   "\n|--------------|:-----:|----------------------------------------------------|:-------------|"
+    md_txt += "\n\n| Year               | Stars | Progress Bar                                       | Percent Done |"
+    md_txt +=   "\n|--------------------|:-----:|----------------------------------------------------|:-------------|"
 
     for line in stars:
         if len(line) == 1:
@@ -51,7 +51,7 @@ if __name__ == "__main__":
 
         total_sum += int(line[1])
 
-        md_txt += f"\n| [{line[0]}]({line[0]}) | {line[1].zfill(2):5} | {progressBar(int(line[1]), 50, 50, '*', ' ')} | {progress_percent(int(line[1]),50)} |"
+        md_txt += f"\n| [{line[0]}](Years/{line[0]}) | {line[1].zfill(2):5} | {progressBar(int(line[1]), 50, 50, '*', ' ')} | {progress_percent(int(line[1]),50)} |"
 
     md_txt += f"\n| {'Total'.ljust(12)} | {str(total_sum).ljust(5)} | {progressBar(total_sum, 50 * len(stars), 50, '*', ' ')} | {progress_percent(total_sum, 50 * len(stars))} |"
 
