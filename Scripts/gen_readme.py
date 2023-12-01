@@ -53,8 +53,9 @@ if __name__ == "__main__":
 
         md_txt += f"\n| [{line[0]}](Years/{line[0]}) | {line[1].zfill(2):5} | {progressBar(int(line[1]), 50, 50, '*', ' ')} | {progress_percent(int(line[1]),50)} |"
 
-    md_txt += f"\n| {'Total'.ljust(12)} | {str(total_sum).ljust(5)} | {progressBar(total_sum, 50 * len(stars), 50, '*', ' ')} | {progress_percent(total_sum, 50 * len(stars))} |"
+    md_txt += f"\n| {'Total'.ljust(18)} | {str(total_sum).ljust(5)} | {progressBar(total_sum, 50 * len(stars), 50, '*', ' ')} | {progress_percent(total_sum, 50 * len(stars))} |"
 
+    # TODO: Make this actually accurate
     md_txt += f"\n\nEach star in the Total row represents roughly {len(stars)} stars"
     md_txt += "\n"
 
