@@ -17,5 +17,5 @@ fn main() {
     part2(&input_data);
 }
 
-part1(){}
-part2(){}
+part1(lines: &Vec<String>){}
+part2(lines: &Vec<String>){}
