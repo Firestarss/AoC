@@ -44,7 +44,8 @@ if __name__ == "__main__":
     finished_years = []
     unfinished_years = []
 
-    md_txt = "# AoC\n\nThis Repo contains my code for completing the Advent of Code challenges. "
+    md_txt = "# AoC #\n\n### Overall Look ###"
+    md_txt += "\n\nThis Repo contains my code for completing the Advent of Code challenges. "
     md_txt += "It is not clean or polished and is probably incomplete. Have fun exploring if you like."
     md_txt += "\n\n| Year               | Stars | Progress Bar                                       | Percent Done |"
     md_txt += "\n|:------------------:|:-----:|:---------------------------------------------------|:-------------|"
