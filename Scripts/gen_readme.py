@@ -74,6 +74,8 @@ if __name__ == "__main__":
     for year in finished_years:
         md_txt += f"\n| {year} |"
 
+    md_txt += "\n\n"
+
     md_txt += f"### Unfinished Years ###\n"
     md_txt += "\n| Year | Stars Needed |"
     md_txt += "\n|:----:|:-------------|"
