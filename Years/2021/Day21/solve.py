@@ -3,7 +3,7 @@ import random
 
 input_files = ["input.txt", "test_input.txt"]
 
-with open(input_files[1], 'r') as f:
+with open(input_files[0], 'r') as f:
     data = [list(map(int, re.findall("\d+", x))) for x in f.readlines()]
 
 class Die():

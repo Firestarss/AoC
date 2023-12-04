@@ -71,9 +71,7 @@ for point in data:
 
     for codeword in point[1]:
         local_output += str(rcodewords[order(codeword)])
-        print(str(rcodewords[order(codeword)]))
-
-    print(local_output)
+ 
     total += int(local_output)
 
 print(total)

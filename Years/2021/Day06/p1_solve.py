@@ -21,7 +21,6 @@ def step(data):
     return temp
 
 for i in range(80):
-    print(i)
     data = step(data)
 
 print(len(data))
