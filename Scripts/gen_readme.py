@@ -76,10 +76,12 @@ if __name__ == "__main__":
 
     md_txt += "\n\n"
 
-    md_txt += f"### Unfinished Years ###\n"
+    md_txt += f"### Unfinished Years (Sorted by Remaining Stars) ###\n"
     md_txt += "\n| Year | Stars Needed |"
     md_txt += "\n|:----:|:-------------|"
 
+    unfinished_years.sort(key = lambda a: a[1])
+    unfinished_years.reverse()
     for year in unfinished_years:
         md_txt += f"\n| {year[0]} | {str(year[1]).ljust(12)} |"
 

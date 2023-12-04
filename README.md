@@ -24,14 +24,14 @@ Each star in the Total row represents roughly 9.1 stars
 | 2017 |
 | 2015 |
 
-### Unfinished Years ###
+### Unfinished Years (Sorted by Remaining Stars) ###
 
 | Year | Stars Needed |
 |:----:|:-------------|
-| 2023 | 42           |
-| 2022 | 19           |
-| 2021 | 21           |
-| 2020 | 14           |
 | 2019 | 44           |
-| 2018 | 24           |
+| 2023 | 42           |
 | 2016 | 30           |
+| 2018 | 24           |
+| 2021 | 21           |
+| 2022 | 19           |
+| 2020 | 14           |
