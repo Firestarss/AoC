@@ -1,12 +1,14 @@
 import requests
 import re
 
-def progressBar (iteration, total, length = 25, fill = '█', empty = '-'):
+
+def progressBar(iteration, total, length=25, fill="█", empty="-"):
     filledLength = int(length * iteration // total)
     bar = fill * filledLength + empty * (length - filledLength)
     return bar
 
-def progress_percent(iteration, total, decimals = 1):
+
+def progress_percent(iteration, total, decimals=1):
     percent = 100 * (iteration / float(total))
     if round(percent, 2).is_integer():
         percent = round(percent)
@@ -15,16 +17,16 @@ def progress_percent(iteration, total, decimals = 1):
 
     return f"{percent}%".ljust(12)
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
     with open("secrets.txt", "r") as infile:
         session_id = infile.read().strip()
 
-    cookies = {
-        "session": session_id
-    }
+    cookies = {"session": session_id}
 
-    response = requests.get("https://adventofcode.com/events", cookies=cookies, headers={})
+    response = requests.get(
+        "https://adventofcode.com/events", cookies=cookies, headers={}
+    )
 
     if response.status_code != 200:
         print(f"ERROR: {response.status_code}")
@@ -45,7 +47,7 @@ if __name__ == "__main__":
     md_txt = "# AoC\n\nThis Repo contains my code for completing the Advent of Code challenges. "
     md_txt += "It is not clean or polished and is probably incomplete. Have fun exploring if you like."
     md_txt += "\n\n| Year               | Stars | Progress Bar                                       | Percent Done |"
-    md_txt +=   "\n|:------------------:|:-----:|:---------------------------------------------------|:-------------|"
+    md_txt += "\n|:------------------:|:-----:|:---------------------------------------------------|:-------------|"
 
     for line in stars:
         if len(line) == 1:
@@ -62,28 +64,27 @@ if __name__ == "__main__":
     total_sum = sum(total_stars)
     md_txt += f"\n| {'Total'.ljust(18)} | {str(total_sum).ljust(5)} | {progressBar(total_sum, 50 * len(stars), 50, '*', ' ')} | {progress_percent(total_sum, 50 * len(stars))} |"
 
-    progress_star_count = progressBar(total_sum, 50 * len(stars), 50, '*', ' ').count("*")
+    progress_star_count = progressBar(total_sum, 50 * len(stars), 50, "*", " ").count(
+        "*"
+    )
 
     md_txt += f"\n\nEach star in the Total row represents roughly {round(total_sum / progress_star_count, 1)} stars"
     md_txt += "\n\n"
 
-    md_txt += f"### Finished Years ###\n"
-    md_txt += "\n| Year |"
-    md_txt += "\n|:----:|"
-
-    for year in finished_years:
-        md_txt += f"\n| {year} |"
-
-    md_txt += "\n\n"
 
     md_txt += f"### Unfinished Years (Sorted by Remaining Stars) ###\n"
     md_txt += "\n| Year | Stars Needed |"
     md_txt += "\n|:----:|:-------------|"
 
-    unfinished_years.sort(key = lambda a: a[1])
+    unfinished_years.sort(key=lambda a: a[1])
     unfinished_years.reverse()
     for year in unfinished_years:
         md_txt += f"\n| {year[0]} | {str(year[1]).ljust(12)} |"
+
+    md_txt += "\n\n"
+
+    md_txt += "### Finished Years ###\n\n"
+    md_txt += ", ".join([str(x) for x in finished_years])
 
     md_txt += "\n"
 

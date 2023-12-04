@@ -17,13 +17,6 @@ This Repo contains my code for completing the Advent of Code challenges. It is n
 
 Each star in the Total row represents roughly 9.1 stars
 
-### Finished Years ###
-
-| Year |
-|:----:|
-| 2017 |
-| 2015 |
-
 ### Unfinished Years (Sorted by Remaining Stars) ###
 
 | Year | Stars Needed |
@@ -35,3 +28,7 @@ Each star in the Total row represents roughly 9.1 stars
 | 2021 | 21           |
 | 2022 | 19           |
 | 2020 | 14           |
+
+### Finished Years ###
+
+2017, 2015
