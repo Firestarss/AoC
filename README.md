@@ -3,7 +3,7 @@
 This Repo contains my code for completing the Advent of Code challenges. It is not clean or polished and is probably incomplete. Have fun exploring if you like.
 
 | Year               | Stars | Progress Bar                                       | Percent Done |
-|--------------------|:-----:|----------------------------------------------------|:-------------|
+|:------------------:|:-----:|:---------------------------------------------------|:-------------|
 | [2023](Years/2023) | 08    | ********                                           | 16%          |
 | [2022](Years/2022) | 31    | *******************************                    | 62%          |
 | [2021](Years/2021) | 29    | *****************************                      | 58%          |
@@ -16,3 +16,20 @@ This Repo contains my code for completing the Advent of Code challenges. It is n
 | Total              | 256   | ****************************                       | 56.9%        |
 
 Each star in the Total row represents roughly 9.1 stars
+
+### Finished Years ###
+
+| Year |
+|:----:|
+| 2017 |
+| 2015 |### Unfinished Years ###
+
+| Year | Stars Needed |
+|:----:|:-------------|
+| 2023 | 42           |
+| 2022 | 19           |
+| 2021 | 21           |
+| 2020 | 14           |
+| 2019 | 44           |
+| 2018 | 24           |
+| 2016 | 30           |

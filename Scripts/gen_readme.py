@@ -38,26 +38,49 @@ if __name__ == "__main__":
     stars = re.sub("<.*?>|\(.*?\)|\s\s+|\*", "", stars)
     stars = [re.findall("\d+", line) for line in stars.splitlines()][:-1]
 
-    total_sum = 0
+    total_stars = []
+    finished_years = []
+    unfinished_years = []
 
     md_txt = "# AoC\n\nThis Repo contains my code for completing the Advent of Code challenges. "
     md_txt += "It is not clean or polished and is probably incomplete. Have fun exploring if you like."
     md_txt += "\n\n| Year               | Stars | Progress Bar                                       | Percent Done |"
-    md_txt +=   "\n|--------------------|:-----:|----------------------------------------------------|:-------------|"
+    md_txt +=   "\n|:------------------:|:-----:|:---------------------------------------------------|:-------------|"
 
     for line in stars:
         if len(line) == 1:
             line.append("0")
 
-        total_sum += int(line[1])
+        total_stars.append(int(line[1]))
+        if int(line[1]) == 50:
+            finished_years.append(line[0])
+        else:
+            unfinished_years.append((line[0], 50 - int(line[1])))
 
         md_txt += f"\n| [{line[0]}](Years/{line[0]}) | {line[1].zfill(2):5} | {progressBar(int(line[1]), 50, 50, '*', ' ')} | {progress_percent(int(line[1]),50)} |"
 
+    total_sum = sum(total_stars)
     md_txt += f"\n| {'Total'.ljust(18)} | {str(total_sum).ljust(5)} | {progressBar(total_sum, 50 * len(stars), 50, '*', ' ')} | {progress_percent(total_sum, 50 * len(stars))} |"
 
     progress_star_count = progressBar(total_sum, 50 * len(stars), 50, '*', ' ').count("*")
 
     md_txt += f"\n\nEach star in the Total row represents roughly {round(total_sum / progress_star_count, 1)} stars"
+    md_txt += "\n\n"
+
+    md_txt += f"### Finished Years ###\n"
+    md_txt += "\n| Year |"
+    md_txt += "\n|:----:|"
+
+    for year in finished_years:
+        md_txt += f"\n| {year} |"
+
+    md_txt += f"### Unfinished Years ###\n"
+    md_txt += "\n| Year | Stars Needed |"
+    md_txt += "\n|:----:|:-------------|"
+
+    for year in unfinished_years:
+        md_txt += f"\n| {year[0]} | {str(year[1]).ljust(12)} |"
+
     md_txt += "\n"
 
     print(md_txt)
