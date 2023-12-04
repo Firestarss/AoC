@@ -22,7 +22,9 @@ Each star in the Total row represents roughly 9.1 stars
 | Year |
 |:----:|
 | 2017 |
-| 2015 |### Unfinished Years ###
+| 2015 |
+
+### Unfinished Years ###
 
 | Year | Stars Needed |
 |:----:|:-------------|
