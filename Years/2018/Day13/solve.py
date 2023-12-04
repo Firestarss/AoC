@@ -87,10 +87,10 @@ def solve(carts):
                 for crash in crashes:
                     del carts[crash]
 
-                if len(carts) < 2:
-                    last = list(carts.keys())[0]
-                    print(f"{carts[last][0][0]},{carts[last][0][1]}")
+                if len(carts) == 1:
                     running = False
-                    break
+    
+    last = list(carts.keys())[0]
+    print(f"{carts[last][0][0]},{carts[last][0][1]}")
 
 solve(carts)
