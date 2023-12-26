@@ -37,6 +37,48 @@
 <a href="Years/2023/Day11/Python/solve.py">
   <img src=".aoc_tiles/tiles/2023/11.png" width="161px">
 </a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2023/12.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2023/13.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2023/14.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2023/15.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2023/16.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2023/17.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2023/18.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2023/19.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2023/20.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2023/21.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2023/22.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2023/23.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2023/24.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2023/25.png" width="161px">
+</a>
 <h1 align="center">
   2022 - 32 ⭐
 </h1>
@@ -250,6 +292,27 @@
 <a href="Years/2020/Day18/solve.py">
   <img src=".aoc_tiles/tiles/2020/18.png" width="161px">
 </a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2020/19.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2020/20.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2020/21.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2020/22.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2020/23.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2020/24.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2020/25.png" width="161px">
+</a>
 <h1 align="center">
   2019 - 10 ⭐
 </h1>
@@ -267,6 +330,66 @@
 </a>
 <a href="Years/2019/Day05/solve.py">
   <img src=".aoc_tiles/tiles/2019/05.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2019/06.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2019/07.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2019/08.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2019/09.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2019/10.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2019/11.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2019/12.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2019/13.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2019/14.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2019/15.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2019/16.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2019/17.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2019/18.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2019/19.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2019/20.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2019/21.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2019/22.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2019/23.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2019/24.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2019/25.png" width="161px">
 </a>
 <h1 align="center">
   2018 - 28 ⭐
@@ -312,6 +435,39 @@
 </a>
 <a href="Years/2018/Day14/solve.py">
   <img src=".aoc_tiles/tiles/2018/14.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2018/15.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2018/16.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2018/17.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2018/18.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2018/19.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2018/20.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2018/21.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2018/22.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2018/23.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2018/24.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2018/25.png" width="161px">
 </a>
 <h1 align="center">
   2017 - 50 ⭐
@@ -426,6 +582,48 @@
 </a>
 <a href="Years/2016/Day11/solve.py">
   <img src=".aoc_tiles/tiles/2016/11.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2016/12.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2016/13.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2016/14.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2016/15.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2016/16.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2016/17.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2016/18.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2016/19.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2016/20.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2016/21.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2016/22.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2016/23.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2016/24.png" width="161px">
+</a>
+<a href="None">
+  <img src=".aoc_tiles/tiles/2016/25.png" width="161px">
 </a>
 <h1 align="center">
   2015 - 50 ⭐
