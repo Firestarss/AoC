@@ -44,9 +44,7 @@ if __name__ == "__main__":
     finished_years = []
     unfinished_years = []
 
-    md_txt = "# AoC #\n\n### Overall Look ###"
-    md_txt += "\n\nThis Repo contains my code for completing the Advent of Code challenges. "
-    md_txt += "It is not clean or polished and is probably incomplete. Have fun exploring if you like."
+    md_txt = "# Years #"
     md_txt += "\n\n| Year               | Stars | Progress Bar                                       | Percent Done |"
     md_txt += "\n|:------------------:|:-----:|:---------------------------------------------------|:-------------|"
 
@@ -60,7 +58,7 @@ if __name__ == "__main__":
         else:
             unfinished_years.append((line[0], 50 - int(line[1])))
 
-        md_txt += f"\n| [{line[0]}](Years/{line[0]}) | {line[1].zfill(2):5} | {progressBar(int(line[1]), 50, 50, '*', ' ')} | {progress_percent(int(line[1]),50)} |"
+        md_txt += f"\n| [{line[0]}]({line[0]}) | {line[1].zfill(2):5} | {progressBar(int(line[1]), 50, 50, '*', ' ')} | {progress_percent(int(line[1]),50)} |"
 
     total_sum = sum(total_stars)
     md_txt += f"\n| {'Total'.ljust(18)} | {str(total_sum).ljust(5)} | {progressBar(total_sum, 50 * len(stars), 50, '*', ' ')} | {progress_percent(total_sum, 50 * len(stars))} |"
@@ -91,5 +89,5 @@ if __name__ == "__main__":
 
     print(md_txt)
 
-    with open("../README.md", "w") as outfile:
+    with open("../Years/README.md", "w") as outfile:
         outfile.write(md_txt)
