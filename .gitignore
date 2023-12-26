@@ -24,3 +24,7 @@ Cargo.lock
 *.pdb
 
 .vscode
+
+# AoC README Formater
+.aoc_tiles/*
+!.aoc_tiles/tiles/
