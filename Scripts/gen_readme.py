@@ -45,8 +45,8 @@ if __name__ == "__main__":
     unfinished_years = []
 
     md_txt = "# Years #"
-    md_txt += "\n\n| Year               | Stars | Progress Bar                                       | Percent Done |"
-    md_txt += "\n|:------------------:|:-----:|:---------------------------------------------------|:-------------|"
+    md_txt += "\n\n| Year         | Stars | Progress Bar                                       | Percent Done |"
+    md_txt += "\n|:------------:|:-----:|:---------------------------------------------------|:-------------|"
 
     for line in stars:
         if len(line) == 1:
@@ -61,7 +61,7 @@ if __name__ == "__main__":
         md_txt += f"\n| [{line[0]}]({line[0]}) | {line[1].zfill(2):5} | {progressBar(int(line[1]), 50, 50, '*', ' ')} | {progress_percent(int(line[1]),50)} |"
 
     total_sum = sum(total_stars)
-    md_txt += f"\n| {'Total'.ljust(18)} | {str(total_sum).ljust(5)} | {progressBar(total_sum, 50 * len(stars), 50, '*', ' ')} | {progress_percent(total_sum, 50 * len(stars))} |"
+    md_txt += f"\n| {'Total'.ljust(12)} | {str(total_sum).ljust(5)} | {progressBar(total_sum, 50 * len(stars), 50, '*', ' ')} | {progress_percent(total_sum, 50 * len(stars))} |"
 
     progress_star_count = progressBar(total_sum, 50 * len(stars), 50, "*", " ").count(
         "*"

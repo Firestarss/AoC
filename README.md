@@ -2,7 +2,7 @@
 
 <!-- AOC TILES BEGIN -->
 <h1 align="center">
-  2023 - 21 ⭐
+  2023 - 22 ⭐
 </h1>
 <a href="Years/2023/Day01/Python/solve.py">
   <img src=".aoc_tiles/tiles/2023/01.png" width="161px">
@@ -80,7 +80,7 @@
   <img src=".aoc_tiles/tiles/2023/25.png" width="161px">
 </a>
 <h1 align="center">
-  2022 - 31 ⭐
+  2022 - 32 ⭐
 </h1>
 <a href="Years/2022/Day01/solve.py">
   <img src=".aoc_tiles/tiles/2022/01.png" width="161px">
@@ -158,7 +158,7 @@
   <img src=".aoc_tiles/tiles/2022/25.png" width="161px">
 </a>
 <h1 align="center">
-  2021 - 29 ⭐
+  2021 - 36 ⭐
 </h1>
 <a href="Years/2021/Day01/p1_solve.py">
   <img src=".aoc_tiles/tiles/2021/01.png" width="161px">
@@ -314,7 +314,7 @@
   <img src=".aoc_tiles/tiles/2020/25.png" width="161px">
 </a>
 <h1 align="center">
-  2019 - 6 ⭐
+  2019 - 10 ⭐
 </h1>
 <a href="Years/2019/Day01/solve.py">
   <img src=".aoc_tiles/tiles/2019/01.png" width="161px">
@@ -392,7 +392,7 @@
   <img src=".aoc_tiles/tiles/2019/25.png" width="161px">
 </a>
 <h1 align="center">
-  2018 - 26 ⭐
+  2018 - 28 ⭐
 </h1>
 <a href="Years/2018/Day01/solve.py">
   <img src=".aoc_tiles/tiles/2018/01.png" width="161px">
@@ -548,7 +548,7 @@
   <img src=".aoc_tiles/tiles/2017/25.png" width="161px">
 </a>
 <h1 align="center">
-  2016 - 20 ⭐
+  2016 - 22 ⭐
 </h1>
 <a href="Years/2016/Day01/solve.py">
   <img src=".aoc_tiles/tiles/2016/01.png" width="161px">
