@@ -13,4 +13,5 @@ repos:
                 - --auto-add-tiles-to-git=amend
                 - --create-all-days
                 - --contrast-improvement-type=dark
+                - --contrast-improvement-threshold=15
             #     - --language-sorting=jl,kt,py,rs
