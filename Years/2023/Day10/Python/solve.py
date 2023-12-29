@@ -1,5 +1,4 @@
 
-
 input_files = ["input.txt", "test_input.txt"]
 
 file = 0
@@ -14,51 +13,11 @@ for row in range(len(lines)):
         if lines[row][col] == "S":
             start = (row, col)
 
-def part1():
-    print(len(get_loop())//2)
-            
-
-def part2():
-    loop = {k:grid[k] for k in get_loop()}
-    print_grid(loop)
-
-    inside = 0
-
-    max_row = max([x[0] for x in grid]) + 1
-    max_col = max([x[1] for x in grid]) + 1
-    min_row = min([x[0] for x in grid])
-    min_col = min([x[1] for x in grid])
-
-    limits = (max_row, max_col, min_row, min_col)
-
-    for r_i in range(min_row, max_row):
-        for c_i in range(min_col, max_col):
-            if is_inside((r_i, c_i), loop, limits):
-                inside += 1
-
-    print(inside)
-
-def is_inside(coord, loop, limits):
-    if coord in loop: return False
-    
-
-def print_grid(grid):
-    max_row = max([x[0] for x in grid])
-    max_col = max([x[1] for x in grid])
-    min_row = min([x[0] for x in grid])
-    min_col = min([x[1] for x in grid])
-
-    for row_idx in range(min_row, max_row + 1):
-        row = []
-        for col_idx in  range(min_col, max_col + 1):
-            row.append(grid[(row_idx, col_idx)] if (row_idx, col_idx) in grid else " ")
-        print("".join(row))
-
-def get_loop():
-    n, s, e, w = ((-1, 0), (1, 0), (0, 1), (0, -1))
+def get_loop(start, grid):
+    n, s, w, e = ((-1, 0), (1, 0), (0, -1), (0, 1))
     dirs = {
-        "|": [n, s],
-        "-": [e, w],
+        "|": [s, n],
+        "-": [w, e],
         "L": [n, e],
         "J": [n, w],
         "7": [s, w],
@@ -72,21 +31,83 @@ def get_loop():
         if test_coord in grid and grid[test_coord] in test[1]:
             dirs["S"].append(test[0])
 
-    q = [(start)]
-    v = set([start])
+    for key in dirs:
+        dirs[key].sort()
+
+    for key in "|-LJ7F":
+        if dirs[key] == dirs["S"]:
+            grid[start] = key
+            break
+
+    cur_pos = start
+    loop = [start]
+    v = set()
+
+    while cur_pos != start or not v:
+        pre_add_len = len(v)
+        v.add(cur_pos)
+        if len(v) == pre_add_len:
+            break
+        for dir in dirs[grid[cur_pos]]:
+            next_pos = (cur_pos[0] + dir[0], cur_pos[1] + dir[1])
+            if next_pos not in v:
+                loop.append(next_pos)
+                cur_pos = next_pos
+                break
+
+    return set(loop)
+
+def grow_grid(grid, loop):
+    output = dict()
+    grown_squares = {
+        "|": ".|./.|./.|.",
+        "-": ".../---/...",
+        "L": ".|./.L-/...",
+        "J": ".|./-J./...",
+        "7": ".../-7./.|.",
+        "F": ".../.F-/.|.",
+        ".": ".../.X./..."
+    }
+
+    for cell in grid:
+        if cell in loop:
+            expanded = grown_squares[grid[cell]].split("/")
+        else:
+            expanded = grown_squares["."].split("/")
+        for i in range(3):
+            for j in range(3):
+                output[(cell[0] * 3 + i, cell[1] * 3 + j)] = expanded[i][j]
+
+    return output
+
+def part1():
+    loop = get_loop(start, grid)
+
+    print(len(loop)//2)
+
+def part2():
+    loop = get_loop(start, grid)
+    big_grid = grow_grid(grid, loop)
+    unknown_parity = set(coord for coord in big_grid if big_grid[coord] == "X")
+
+    q = [(0,0)]
+    v = set((0,0))
+    dirs = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
     while q:
-        cur_coord = q.pop(0)
-        cur_dir_key = grid[cur_coord]
-
-        for dir in dirs[cur_dir_key]:
-            neighbor = (cur_coord[0] + dir[0], cur_coord[1] + dir[1])
-
-            if neighbor in grid and neighbor not in v:
+        current = q.pop()
+        for dir in dirs:
+            neighbor = (current[0] + dir[0], current[1] + dir[1])
+            if neighbor in v:
+                continue
+            v.add(neighbor)
+            if neighbor in big_grid and big_grid[neighbor] in ".X":
                 q.append(neighbor)
-                v.add(neighbor)
-        
-    return v
+                if big_grid[neighbor] == "X":
+                    unknown_parity.remove(neighbor)
+
+    print(len(unknown_parity))
+
 
 part1()
 part2()
