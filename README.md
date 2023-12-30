@@ -2,7 +2,7 @@
 
 <!-- AOC TILES BEGIN -->
 <h1 align="center">
-  2023 - 26 ⭐
+  2023 - 28 ⭐
 </h1>
 <a href="Years/2023/Day01/Python/solve.py">
   <img src=".aoc_tiles/tiles/2023/01.png" width="161px">
@@ -46,7 +46,7 @@
 <a href="Years/2023/Day14/Python/solve.py">
   <img src=".aoc_tiles/tiles/2023/14.png" width="161px">
 </a>
-<a href="None">
+<a href="Years/2023/Day15/Python/solve.py">
   <img src=".aoc_tiles/tiles/2023/15.png" width="161px">
 </a>
 <a href="None">
