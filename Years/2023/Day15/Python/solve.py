@@ -58,5 +58,3 @@ def part2():
 
 part1()
 part2()
-
-# p2: 221612 too low
