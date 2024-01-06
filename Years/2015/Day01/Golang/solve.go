@@ -40,12 +40,12 @@ func part2(data string) {
 
 func main() {
 
-	data, err := ioutil.ReadFile("input.txt")
+	data, err := ioutil.ReadFile("../input.txt")
 
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	part1(string(data)) // 232
-	part2(string(data)) // 1783
+	part1(string(data))
+	part2(string(data))
 }

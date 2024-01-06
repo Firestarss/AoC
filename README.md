@@ -628,7 +628,7 @@
 <h1 align="center">
   2015 - 50 ⭐
 </h1>
-<a href="Years/2015/Day01/solve.go">
+<a href="Years/2015/Day01/Golang/solve.go">
   <img src=".aoc_tiles/tiles/2015/01.png" width="161px">
 </a>
 <a href="Years/2015/Day02/solve.go">
